@@ -27,12 +27,6 @@ export const business = {
   counties: "King and Snohomish Counties, Washington",
 } as const;
 
-export const nav = [
-  { href: "#top", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#contact", label: "Contact" },
-] as const;
-
 export const services = [
   {
     id: "nemt",

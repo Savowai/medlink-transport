@@ -2,7 +2,7 @@ import { CallButton } from "./CallButton";
 
 export function Medicaid() {
   return (
-    <section id="medicaid" aria-labelledby="medicaid-heading" className="bg-white">
+    <section id="medicaid" aria-labelledby="medicaid-heading" className="bg-background">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div className="rounded-2xl border-2 border-secondary/20 bg-secondary/5 p-8 sm:p-12">
           <h2

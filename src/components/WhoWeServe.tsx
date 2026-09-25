@@ -5,7 +5,7 @@ export function WhoWeServe() {
     <section
       id="who-we-serve"
       aria-labelledby="who-we-serve-heading"
-      className="bg-white"
+      className="bg-background"
     >
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <h2

@@ -5,7 +5,7 @@ export function HoursAndArea() {
     <section
       id="service-area"
       aria-labelledby="hours-area-heading"
-      className="bg-white"
+      className="bg-background"
     >
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <h2 id="hours-area-heading" className="sr-only">

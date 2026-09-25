@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { services } from "@/lib/content";
 
 const icons = {
@@ -16,12 +17,12 @@ export function Services() {
       className="bg-background"
     >
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-        <h2
+        <h1
           id="services-heading"
           className="max-w-2xl text-3xl font-bold text-foreground sm:text-4xl"
         >
           Services
-        </h2>
+        </h1>
         <p className="mt-4 max-w-2xl text-lg font-medium text-foreground">
           A private, credentialed transportation partner across five service
           lines.
@@ -33,14 +34,19 @@ export function Services() {
             return (
               <li
                 key={id}
-                className="rounded-2xl border border-border bg-white p-6 shadow-sm"
+                className="relative rounded-2xl border border-border bg-white p-6 shadow-sm transition-shadow duration-200 focus-within:shadow-md hover:shadow-md"
               >
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <Icon className="h-6 w-6" />
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-foreground">
-                  {title}
-                </h3>
+                <h2 className="mt-4 text-lg font-bold text-foreground">
+                  <Link
+                    href={`/services/${id}`}
+                    className="after:absolute after:inset-0 after:content-[''] hover:text-primary"
+                  >
+                    {title}
+                  </Link>
+                </h2>
                 <p className="mt-2 text-[15px] font-medium leading-relaxed text-foreground">
                   {description}
                 </p>
