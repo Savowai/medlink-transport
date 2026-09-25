@@ -14,19 +14,15 @@ export function Services() {
     <section
       id="services"
       aria-labelledby="services-heading"
-      className="bg-background"
+      className="bg-gradient-to-b from-surface to-background"
     >
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <h1
           id="services-heading"
-          className="max-w-2xl text-3xl font-bold text-foreground sm:text-4xl"
+          className="max-w-2xl text-3xl font-extrabold text-foreground sm:text-4xl"
         >
           Services
         </h1>
-        <p className="mt-4 max-w-2xl text-lg font-medium text-foreground">
-          A private, credentialed transportation partner across five service
-          lines.
-        </p>
 
         <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map(({ id, title, description }) => {
@@ -34,9 +30,9 @@ export function Services() {
             return (
               <li
                 key={id}
-                className="relative rounded-2xl border border-border bg-white p-6 shadow-sm transition-shadow duration-200 focus-within:shadow-md hover:shadow-md"
+                className="relative rounded-3xl bg-white p-7 shadow-lg shadow-primary/5 transition-shadow duration-200 focus-within:shadow-xl hover:shadow-xl"
               >
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
                   <Icon className="h-6 w-6" />
                 </span>
                 <h2 className="mt-4 text-lg font-bold text-foreground">

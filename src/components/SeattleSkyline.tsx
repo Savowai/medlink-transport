@@ -18,24 +18,25 @@ export function SeattleSkyline({ className = "" }: SeattleSkylineProps) {
     >
       <defs>
         <linearGradient id="skyline-sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="var(--color-background)" stopOpacity="0" />
-          <stop offset="28%" stopColor="var(--color-primary)" stopOpacity="0.9" />
+          <stop offset="0%" stopColor="#dbe6f2" />
+          <stop offset="40%" stopColor="var(--color-primary)" />
           <stop offset="100%" stopColor="var(--color-primary-dark)" />
         </linearGradient>
         <linearGradient id="skyline-glow" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="var(--color-secondary)" stopOpacity="0.65" />
+          <stop offset="0%" stopColor="var(--color-secondary)" stopOpacity="0" />
+          <stop offset="55%" stopColor="var(--color-secondary)" stopOpacity="0.55" />
           <stop offset="100%" stopColor="var(--color-secondary)" stopOpacity="0" />
         </linearGradient>
         <linearGradient id="skyline-water" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="var(--color-primary-dark)" />
-          <stop offset="100%" stopColor="#06222b" />
+          <stop offset="100%" stopColor="#000f20" />
         </linearGradient>
       </defs>
 
       {/* Dusk sky */}
       <rect x="0" y="0" width="1440" height="420" fill="url(#skyline-sky)" />
       {/* Sunset glow near the horizon */}
-      <rect x="0" y="120" width="1440" height="190" fill="url(#skyline-glow)" />
+      <rect x="0" y="50" width="1440" height="255" fill="url(#skyline-glow)" />
       {/* Sun, centered on the viewBox so it survives narrow (mobile) crops */}
       <circle cx="720" cy="150" r="46" fill="var(--color-secondary)" opacity="0.9" />
 
@@ -66,7 +67,7 @@ export function SeattleSkyline({ className = "" }: SeattleSkylineProps) {
         <path d="M674 110 a64 22 0 1 0 128 0 a64 22 0 1 0 -128 0 Z" />
         <rect x="715" y="48" width="8" height="64" />
       </g>
-      <circle cx="719" cy="46" r="7" fill="var(--color-secondary)" />
+      <circle cx="719" cy="46" r="7" fill="#ffffff" />
 
       {/* Puget Sound */}
       <rect x="0" y="303" width="1440" height="117" fill="url(#skyline-water)" />

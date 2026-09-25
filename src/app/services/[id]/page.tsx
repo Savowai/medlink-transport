@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CallButton } from "@/components/CallButton";
 import { Medicaid } from "@/components/Medicaid";
@@ -38,15 +37,9 @@ export default async function ServicePage({
     <>
       <section aria-labelledby="service-heading" className="bg-background">
         <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
-          <Link
-            href="/services"
-            className="text-[15px] font-semibold text-primary hover:underline"
-          >
-            ← All services
-          </Link>
           <h1
             id="service-heading"
-            className="mt-6 text-3xl font-bold text-foreground sm:text-4xl"
+            className="text-3xl font-bold text-foreground sm:text-4xl"
           >
             {service.title}
           </h1>

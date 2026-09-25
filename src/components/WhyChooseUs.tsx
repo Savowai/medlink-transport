@@ -33,7 +33,7 @@ function CheckIcon() {
       strokeWidth="2.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="mt-1 h-6 w-6 shrink-0 text-secondary"
+      className="mt-1 h-6 w-6 shrink-0 text-primary"
       aria-hidden="true"
     >
       <path d="M20 6 9 17l-5-5" />

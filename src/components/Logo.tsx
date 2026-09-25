@@ -43,8 +43,8 @@ export function Logo({ className = "", markClassName = "h-9 w-9" }: LogoProps) {
   return (
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <LogoMark className={`shrink-0 ${markClassName}`} />
-      <span className="font-display text-lg font-bold leading-none text-primary sm:text-xl">
-        MedLink Transport
+      <span className="font-display text-lg font-extrabold leading-none text-primary sm:text-xl">
+        MedLink <span className="text-secondary">Transport</span>
       </span>
     </span>
   );

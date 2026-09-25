@@ -2,7 +2,7 @@
 export const business = {
   name: "MedLink Transport LLC",
   tagline:
-    "MedLink Transport is a licensed, private transportation provider serving the Greater Seattle area with non-emergency medical, courier, private school, senior mobility, and corporate transportation services.",
+    "Licensed private transportation for healthcare, education, and organizations throughout the Greater Seattle area.",
   phoneDisplay: "(206) 555-0142",
   phoneHref: "tel:+12065550142",
   email: "info@medlinktransport.com",

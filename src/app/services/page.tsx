@@ -1,20 +1,6 @@
-import type { Metadata } from "next";
-import { Services } from "@/components/Services";
-import { WhyChooseUs } from "@/components/WhyChooseUs";
-import { WhoWeServe } from "@/components/WhoWeServe";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Services | MedLink Transport",
-  description:
-    "Non-emergency medical, medical courier, private school, senior and adult day program, and corporate transportation in the Greater Seattle area.",
-};
-
-export default function ServicesPage() {
-  return (
-    <>
-      <Services />
-      <WhyChooseUs />
-      <WhoWeServe />
-    </>
-  );
+// Services are reached through the nav dropdown; there is no combined page.
+export default function ServicesIndex() {
+  redirect("/");
 }

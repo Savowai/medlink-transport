@@ -12,9 +12,9 @@ export function CallButton({
   label = `Call Now: ${business.phoneDisplay}`,
 }: CallButtonProps) {
   const base =
-    "inline-flex items-center justify-center gap-2 rounded-lg px-6 py-4 text-lg font-semibold transition-colors duration-200 ease-out focus-visible:outline-3 focus-visible:outline-offset-2 min-h-[44px]";
+    "inline-flex items-center justify-center gap-2 rounded-xl px-6 py-4 text-lg font-bold transition-colors duration-200 ease-out focus-visible:outline-3 focus-visible:outline-offset-2 min-h-[44px]";
   const variants = {
-    primary: "bg-primary text-white hover:bg-primary-dark",
+    primary: "bg-secondary text-white shadow-md hover:bg-secondary-dark",
     secondary:
       "bg-white text-primary border-2 border-primary hover:bg-surface",
   };

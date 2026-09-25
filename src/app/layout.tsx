@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "MedLink Transport LLC | Non-Emergency Medical Transportation",
+  title: "MedLink Transport | Private Transportation in Greater Seattle",
   description:
-    "Safe, reliable non-emergency medical transportation for patients, seniors, and individuals with disabilities throughout King and Snohomish Counties, Washington. Wheelchair accessible. Medicaid accepted.",
+    "Licensed private transportation for healthcare, education, and organizations throughout the Greater Seattle area. Non-emergency medical, courier, school, senior, and corporate transport.",
 };
 
 export default function RootLayout({
@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.variable}>
-      <body className="min-h-full bg-background text-foreground antialiased">
+    <html lang="en" className={jakarta.variable}>
+      <body className="flex min-h-dvh flex-col bg-background text-foreground antialiased">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-primary focus:px-5 focus:py-3 focus:text-white"
@@ -32,7 +32,9 @@ export default function RootLayout({
           Skip to main content
         </a>
         <Header />
-        <main id="main">{children}</main>
+        <main id="main" className="flex flex-1 flex-col">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
