@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { ContactDetails } from "@/components/ContactDetails";
 import { HoursAndArea } from "@/components/HoursAndArea";
 import { HowItWorks } from "@/components/HowItWorks";
-import { Commitment } from "@/components/Commitment";
 
 export const metadata: Metadata = {
   title: "Contact | MedLink Transport",
@@ -16,7 +15,6 @@ export default function ContactPage() {
       <ContactDetails />
       <HoursAndArea />
       <HowItWorks />
-      <Commitment />
     </>
   );
 }

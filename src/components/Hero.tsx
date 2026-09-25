@@ -34,6 +34,14 @@ export function Hero() {
         {/* Seattle skyline at dusk — illustrated PNW backdrop, not a stock photo */}
         <div className="relative min-h-40 flex-1 overflow-hidden rounded-[2rem] rounded-br-[5rem] shadow-xl">
           <SeattleSkyline className="absolute inset-0 h-full w-full" />
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-dark to-transparent px-6 pb-5 pt-12 text-center sm:pb-6">
+            <h2 className="text-sm font-bold uppercase tracking-wide text-white">
+              Our Commitment
+            </h2>
+            <p className="mx-auto mt-1 max-w-2xl text-base font-medium text-white sm:text-lg">
+              Your safety, comfort, and dignity are our highest priorities.
+            </p>
+          </div>
         </div>
       </div>
     </section>

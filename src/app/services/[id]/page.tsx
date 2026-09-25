@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CallButton } from "@/components/CallButton";
-import { Medicaid } from "@/components/Medicaid";
 import { business, services } from "@/lib/content";
 
 type Params = { id: string };
@@ -49,12 +48,21 @@ export default async function ServicePage({
           <p className="mt-4 text-base text-foreground">
             {business.hours}. {business.hoursNote}
           </p>
+          {service.coverage && (
+            <div className="mt-8 rounded-2xl border-2 border-primary/15 bg-surface p-6">
+              <h2 className="text-lg font-bold text-foreground">
+                Coverage &amp; Payment
+              </h2>
+              <p className="mt-2 text-base font-medium leading-relaxed text-foreground">
+                {service.coverage}
+              </p>
+            </div>
+          )}
           <div className="mt-8">
             <CallButton />
           </div>
         </div>
       </section>
-      {service.id === "nemt" && <Medicaid />}
     </>
   );
 }

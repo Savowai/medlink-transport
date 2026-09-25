@@ -27,39 +27,57 @@ export const business = {
   counties: "King and Snohomish Counties, Washington",
 } as const;
 
-export const services = [
+export type Service = {
+  id: string;
+  title: string;
+  description: string;
+  /** How rides are paid for, where it applies. Confirm with the business before launch. */
+  coverage?: string;
+};
+
+export const services: readonly Service[] = [
   {
     id: "nemt",
     title: "Non-Emergency Medical Transportation",
     description:
       "Scheduled rides to dialysis, physical therapy, chemotherapy/radiation, hospital discharge, and routine medical visits. Wheelchair-accessible vehicles, door-to-door assistance, on-time pickups.",
+    coverage:
+      "Available to Apple Health (Medicaid) clients through Washington’s transportation brokerage, and to private-pay clients and facilities.",
   },
   {
     id: "courier",
     title: "Medical Courier & Supplies Transportation",
     description:
       "Chain-of-custody transport of lab specimens, pharmaceuticals, and medical supplies between labs, clinics, and hospitals. HIPAA-trained drivers, scheduled routes or urgent on-demand runs.",
+    coverage:
+      "Billed to contracted healthcare accounts.",
   },
   {
     id: "school",
     title: "Private School Run Services",
     description:
       "Recurring rides to and from private school, plus after-school activities, tutoring, and camps — outside the public school bus system. Vetted, background-checked drivers on a schedule parents can count on.",
+    coverage:
+      "Provided under school district contracts for eligible students, including special education and students in transition, and to families as private pay.",
   },
   {
     id: "senior",
     title: "Senior & Adult Day Program Transport",
     description:
       "Companion transportation for elderly clients — adult day programs, social visits, errands, and recurring checkups. Consistent, dignified day-to-day mobility support, not just appointment-based trips.",
+    coverage:
+      "Arranged with adult day programs and care facilities, including Medicaid-funded programs, or directly with families as private pay.",
   },
   {
     id: "corporate",
     title: "Corporate & Staff Transport Contracts",
     description:
       "Contracted transportation for healthcare and organizational clients — staff, travel RNs, home health aides between assignments, and supplies. A dependable contracted partner, not one-off rides.",
+    coverage:
+      "Provided under contract and billed to the organization.",
   },
   // Disability services transport is a planned future addition — not built out yet.
-] as const;
+];
 
 export const whyChooseUs = [
   "Licensed and insured",

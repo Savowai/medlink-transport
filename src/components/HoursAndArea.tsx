@@ -37,9 +37,6 @@ export function HoursAndArea() {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-base text-muted">
-              …and surrounding communities.
-            </p>
           </div>
         </div>
       </div>
