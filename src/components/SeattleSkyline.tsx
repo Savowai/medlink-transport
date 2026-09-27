@@ -12,7 +12,7 @@ export function SeattleSkyline({ className = "" }: SeattleSkylineProps) {
   return (
     <svg
       viewBox="0 0 1440 420"
-      preserveAspectRatio="xMidYMax slice"
+      preserveAspectRatio="xMidYMid slice"
       className={className}
       aria-hidden="true"
     >

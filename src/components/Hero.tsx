@@ -10,7 +10,7 @@ export function Hero() {
       aria-labelledby="hero-heading"
       className="flex flex-1 flex-col bg-gradient-to-b from-background to-surface"
     >
-      <div className="mx-auto flex max-w-3xl flex-col items-center px-4 pt-8 text-center sm:px-6 sm:pt-10">
+      <div className="mx-auto flex max-w-3xl flex-col items-center px-4 pt-5 text-center sm:px-6 sm:pt-6">
         <h1
           id="hero-heading"
           className="flex flex-col items-center gap-3 sm:flex-row sm:gap-4"
@@ -25,23 +25,24 @@ export function Hero() {
           {business.tagline}
         </p>
 
-        <div className="mt-6">
+        <div className="mt-5">
           <CallButton />
         </div>
       </div>
 
-      <div className="mx-auto flex min-h-40 w-full max-w-6xl flex-1 flex-col px-4 pb-6 pt-8 sm:px-6 sm:pb-8">
+      <div className="mx-auto flex min-h-40 w-full max-w-6xl flex-1 flex-col px-4 pb-4 pt-5 sm:px-6 sm:pb-5">
         {/* Seattle skyline at dusk — illustrated PNW backdrop, not a stock photo */}
         <div className="relative min-h-40 flex-1 overflow-hidden rounded-[2rem] rounded-br-[5rem] shadow-xl">
           <SeattleSkyline className="absolute inset-0 h-full w-full" />
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-dark to-transparent px-6 pb-5 pt-12 text-center sm:pb-6">
-            <h2 className="text-sm font-bold uppercase tracking-wide text-white">
-              Our Commitment
-            </h2>
-            <p className="mx-auto mt-1 max-w-2xl text-base font-medium text-white sm:text-lg">
-              Your safety, comfort, and dignity are our highest priorities.
-            </p>
-          </div>
+        </div>
+
+        <div className="mx-auto max-w-2xl pt-4 text-center">
+          <h2 className="text-sm font-extrabold uppercase tracking-wide text-secondary">
+            Our Commitment
+          </h2>
+          <p className="mt-1 text-base font-medium leading-snug text-foreground sm:text-lg">
+            Your safety, comfort, and dignity are our highest priorities.
+          </p>
         </div>
       </div>
     </section>
